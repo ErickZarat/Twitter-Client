@@ -1,3 +1,4 @@
 <resources>
 	<string name="app_name">Twiter Client</string>
+	<string name="login.error.message">Imposible iniciar sesion %s</string>
 </resources>
