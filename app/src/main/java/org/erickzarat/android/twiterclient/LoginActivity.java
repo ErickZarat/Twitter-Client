@@ -10,8 +10,7 @@ import butterknife.ButterKnife;
 import com.twitter.sdk.android.Twitter;
 import com.twitter.sdk.android.core.*;
 import com.twitter.sdk.android.core.identity.TwitterLoginButton;
-import io.fabric.sdk.android.Fabric;
-import org.erickzarat.android.twiterclient.main.MainActivity;
+import org.erickzarat.android.twiterclient.main.ui.MainActivity;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -53,6 +52,10 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void navigateToMainScreen() {
-        startActivity(new Intent(this, MainActivity.class));
+        Intent intent = new Intent(this, MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP
+                | Intent.FLAG_ACTIVITY_NEW_TASK
+                | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
     }
 }
