@@ -14,7 +14,7 @@ import butterknife.ButterKnife;
 import com.twitter.sdk.android.Twitter;
 import org.erickzarat.android.twiterclient.LoginActivity;
 import org.erickzarat.android.twiterclient.R;
-import org.erickzarat.android.twiterclient.hashtags.HashtagsFragment;
+import org.erickzarat.android.twiterclient.hashtags.ui.HashtagsFragment;
 import org.erickzarat.android.twiterclient.images.ui.ImagesFragment;
 import org.erickzarat.android.twiterclient.main.ui.adapters.MainSectionsPagerAdapter;
 
